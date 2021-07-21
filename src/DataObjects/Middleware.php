@@ -1,6 +1,6 @@
 <?php
 
-namespace Mertoot\LaravelSwagger\DataObjects;
+namespace Merloot\LaravelSwagger\DataObjects;
 
 class Middleware
 {
