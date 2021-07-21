@@ -10,13 +10,11 @@ class Route
 {
     private $route;
     private $middleware;
-    private $group;
 
     public function __construct(LaravelRoute $route)
     {
         $this->route = $route;
         $this->middleware = $this->formatMiddleware();
-        $this->group = $this->group();
 
     }
 
@@ -35,10 +33,6 @@ class Route
     public function uri()
     {
         return strip_optional_char($this->originalUri());
-    }
-
-    public function group(){
-        return $this->route->getPrefix();
     }
 
     public function middleware()

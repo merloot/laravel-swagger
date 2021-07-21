@@ -55,7 +55,6 @@ class Generator
             }
         }
 
-        var_dump($this->route->group());
         return $this->docs;
     }
 
